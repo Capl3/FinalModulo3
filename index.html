@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensajería</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <button id="botonMenu">Menú</button>
+            <ul id="menuNavegacion">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Chat</a></li>
+                <li><a href="#">Preguntas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <aside id="conversaciones">
+            <input type="text" placeholder="Buscar conversaciones..." id="cajaBusqueda">
+            <ul>
+                <li class="conversacion no-leida"><span>Jessica</span> <span>12:45</span></li>
+                <li class="conversacion"><span>Pedro</span> <span>09:20</span></li>
+                <li class="conversacion"><span>Romina</span> <span>Ayer</span></li>
+                <li class="conversacion no-leida"><span>José</span> <span>10:30</span></li>
+                <li class="conversacion"><span>Gonzalo</span> <span>09:45</span></li>
+            </ul>
+        </aside>
+
+        <section id="conversacionActual">
+            <header>
+                <img src="https://picsum.photos/200/300" alt="Foto de perfil" class="perfil">
+                <h2>Remitente Actual</h2>
+                <button id="botonAdjuntar">Adjuntar</button>
+                <div id="menuDesplegable" class="oculto">
+                    <ul>
+                        <li>Imagen</li>
+                        <li>Video</li>
+                        <li>Documento</li>
+                    </ul>
+                </div>
+            </header>
+            <div class="mensajes">
+                <div class="mensaje emisor">Mensaje del emisor</div>
+                <div class="mensaje receptor">Mensaje del receptor</div>
+                <div class="mensaje emisor">Mensaje del emisor</div>
+                <div class="mensaje receptor">Mensaje del receptor</div>
+                <div class="mensaje emisor">Mensaje del emisor</div>
+                <div class="mensaje receptor">Mensaje del receptor</div>
+                <div class="mensaje emisor">Mensaje del emisor</div>
+                <div class="mensaje receptor">Mensaje del receptor</div>
+                <div class="mensaje emisor">Mensaje del emisor</div>
+                <div class="mensaje receptor">Mensaje del receptor</div>
+                <div class="mensaje emisor">Mensaje del emisor</div>
+                <div class="mensaje receptor">Mensaje del receptor</div>
+            </div>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

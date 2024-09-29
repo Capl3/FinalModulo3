@@ -1,0 +1,135 @@
+/* Estilos generales (Mobile First) */
+body {
+    font-family: Arial, sans-serif;
+    background: url('https://fastly.picsum.photos/id/17/2500/1667.jpg?hmac=HD-JrnNUZjFiP2UZQvWcKrgLoC_pc_ouUSWv8kHsJJY') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+}
+
+#botonMenu {
+    display: block;
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#menuNavegacion {
+    display: none;
+}
+
+#conversaciones {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+}
+
+#cajaBusqueda {
+    width: 100%;
+    padding: 5px;
+}
+
+.conversacion {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+}
+
+.no-leida span:first-child {
+    font-weight: bold;
+}
+
+#conversacionActual {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.perfil {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.mensajes {
+    margin-top: 20px;
+}
+
+.mensaje {
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.emisor {
+    background-color: #d1f5d3;
+    text-align: right;
+}
+
+.receptor {
+    background-color: #e5e5ea;
+    text-align: left;
+}
+
+
+#botonAdjuntar {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 5px;
+}
+
+#menuDesplegable {
+    display: none;
+    background-color: white;
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 50px;
+}
+
+#menuDesplegable ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menuDesplegable ul li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#menuDesplegable ul li:hover {
+    background-color: #eee;
+}
+
+
+@media(min-width: 768px) {
+    #botonMenu {
+        display: none;
+    }
+
+    #menuNavegacion {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    main {
+        display: flex;
+    }
+
+    #conversaciones {
+        display: block;
+        width: 30%;
+    }
+
+    #conversacionActual {
+        width: 70%;
+    }
+}
